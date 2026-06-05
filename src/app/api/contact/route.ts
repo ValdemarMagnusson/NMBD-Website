@@ -36,12 +36,6 @@ const MSG: Record<Lang, Record<string, string>> = {
     serviceLabel: "Tjänst",
     messageLabel: "Meddelande",
     heading: "Ny kontaktförfrågan",
-    autoReplySubject: "Tack för ditt meddelande — NMBD",
-    autoReplyText:
-      "Hej {{name}},\n\nTack för att du hörde av dig till Nordiska Mark, Bygg & Design AB. Vi har tagit emot ditt meddelande och återkommer inom kort.\n\nMed vänliga hälsningar,\nNordiska Mark, Bygg & Design AB\ninfo@nmbd.se",
-    autoReplyHtmlHeading: "Tack för ditt meddelande",
-    autoReplyHtmlBody:
-      "Hej {{name}},<br><br>Tack för att du hörde av dig till Nordiska Mark, Bygg & Design AB. Vi har tagit emot ditt meddelande och återkommer inom kort.<br><br>Med vänliga hälsningar,<br><strong>Nordiska Mark, Bygg & Design AB</strong><br><a href=\"mailto:info@nmbd.se\">info@nmbd.se</a>",
   },
   en: {
     name: "Please enter a name.",
@@ -59,12 +53,6 @@ const MSG: Record<Lang, Record<string, string>> = {
     serviceLabel: "Service",
     messageLabel: "Message",
     heading: "New contact request",
-    autoReplySubject: "Thank you for your message — NMBD",
-    autoReplyText:
-      "Hi {{name}},\n\nThank you for contacting Nordiska Mark, Bygg & Design AB. We have received your message and will get back to you shortly.\n\nBest regards,\nNordiska Mark, Bygg & Design AB\ninfo@nmbd.se",
-    autoReplyHtmlHeading: "Thank you for your message",
-    autoReplyHtmlBody:
-      "Hi {{name}},<br><br>Thank you for contacting Nordiska Mark, Bygg & Design AB. We have received your message and will get back to you shortly.<br><br>Best regards,<br><strong>Nordiska Mark, Bygg & Design AB</strong><br><a href=\"mailto:info@nmbd.se\">info@nmbd.se</a>",
   },
 };
 
@@ -86,10 +74,6 @@ function escapeHtml(value: string) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
-}
-
-function fillTemplate(template: string, name: string) {
-  return template.replaceAll("{{name}}", name);
 }
 
 async function sendResendEmail(
@@ -206,21 +190,6 @@ export async function POST(request: Request) {
     const errText = await inquiry.text().catch(() => "");
     console.error("Resend inquiry error", inquiry.status, errText);
     return json({ ok: false, error: m.sendFailed }, 502);
-  }
-
-  const autoReplyText = fillTemplate(m.autoReplyText, name);
-  const autoReplyHtmlBody = fillTemplate(m.autoReplyHtmlBody, escapeHtml(name));
-  const autoReply = await sendResendEmail(apiKey, {
-    from,
-    to: [email],
-    subject: m.autoReplySubject,
-    text: autoReplyText,
-    html: `<h2>${escapeHtml(m.autoReplyHtmlHeading)}</h2><p style="font-family:system-ui,sans-serif;line-height:1.6">${autoReplyHtmlBody}</p>`,
-  });
-
-  if (!autoReply.ok) {
-    const errText = await autoReply.text().catch(() => "");
-    console.error("Resend auto-reply error", autoReply.status, errText);
   }
 
   return json({ ok: true });
