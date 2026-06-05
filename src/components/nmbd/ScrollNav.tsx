@@ -94,14 +94,24 @@ export default function ScrollNav() {
       background: colors.cream,
       transition: "opacity 0.2s ease",
     },
-    logo: {
-      position: "absolute" as const,
-      left: "50%",
-      transform: "translateX(-50%)",
-      height: isMobile ? "26px" : "30px",
-      width: "auto",
-      display: "block",
-    },
+    logo: isMobile
+      ? {
+          position: "static" as const,
+          height: "26px",
+          width: "auto",
+          maxWidth: "42vw",
+          objectFit: "contain" as const,
+          display: "block",
+          flex: "0 1 auto",
+        }
+      : {
+          position: "absolute" as const,
+          left: "50%",
+          transform: "translateX(-50%)",
+          height: "30px",
+          width: "auto",
+          display: "block",
+        },
     cta: {
       display: "inline-flex",
       alignItems: "center",
