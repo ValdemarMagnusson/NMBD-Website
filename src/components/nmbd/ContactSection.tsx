@@ -26,6 +26,7 @@ export default function ContactSection({ preselectedService }: ContactSectionPro
     message: "",
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [windowWidth, setWindowWidth] = useState(1200);
 
@@ -65,39 +66,44 @@ export default function ContactSection({ preselectedService }: ContactSectionPro
 
     const serviceTitle = formData.serviceId
       ? getServiceTitle(Number(formData.serviceId), t)
-      : t("nmbd.contact.mailto.subjectFallback");
+      : "";
 
-    const result = await submitContactForm(
-      {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        service: serviceTitle,
-        message: formData.message,
-      },
-      {
-        subject: t("nmbd.contact.mailto.subject", { service: serviceTitle }),
-        name: t("nmbd.contact.mailto.name"),
-        email: t("nmbd.contact.mailto.email"),
-        phone: t("nmbd.contact.mailto.phone"),
-        service: t("nmbd.contact.mailto.service"),
-        message: t("nmbd.contact.mailto.message"),
-      },
-    );
+    setIsSubmitting(true);
+    const result = await submitContactForm({
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      service: serviceTitle,
+      message: formData.message,
+      lang: language,
+    });
+    setIsSubmitting(false);
 
     if (result.success) {
       setFormSubmitted(true);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        serviceId: "",
+        message: "",
+      });
       setTimeout(() => {
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          serviceId: "",
-          message: "",
-        });
         setFormSubmitted(false);
-      }, 3000);
+      }, 5000);
+      return;
     }
+
+    if (result.kind === "validation") {
+      setSubmitError(result.error);
+      return;
+    }
+
+    setSubmitError(
+      result.kind === "network"
+        ? t("nmbd.contact.errorNetwork")
+        : t("nmbd.contact.errorGeneric"),
+    );
   };
 
   const isMobile = windowWidth <= 768;
@@ -458,8 +464,11 @@ export default function ContactSection({ preselectedService }: ContactSectionPro
                 style={styles.submitButton}
                 className="submit-button"
                 type="submit"
+                disabled={isSubmitting}
               >
-                {t("nmbd.contact.form.submit")}
+                {isSubmitting
+                  ? t("nmbd.contact.form.submitting")
+                  : t("nmbd.contact.form.submit")}
               </button>
 
               {submitError && (
@@ -470,7 +479,7 @@ export default function ContactSection({ preselectedService }: ContactSectionPro
 
               {formSubmitted && (
                 <div style={styles.successMessage} className="success-message">
-                  {t("nmbd.contact.successMessage", { email: site.email })}
+                  {t("nmbd.contact.successMessage")}
                 </div>
               )}
             </form>

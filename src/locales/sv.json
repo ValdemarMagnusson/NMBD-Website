@@ -135,19 +135,13 @@
         "service": "Tjänst",
         "servicePlaceholder": "Välj tjänst",
         "message": "Meddelande",
-        "submit": "Skicka"
+        "submit": "Skicka",
+        "submitting": "Skickar..."
       },
       "preselectedMessage": "Jag är intresserad av er tjänst \"{{service}}\" och skulle vilja veta mer.",
-      "successMessage": "Tack! Om din e-postapp inte öppnades automatiskt, skicka gärna till {{email}}.",
-      "mailto": {
-        "subject": "Kontaktförfrågan: {{service}}",
-        "subjectFallback": "Webbplatsen",
-        "name": "Namn",
-        "email": "E-post",
-        "phone": "Telefon",
-        "service": "Tjänst",
-        "message": "Meddelande"
-      }
+      "successMessage": "Tack! Vi har tagit emot ditt meddelande och återkommer inom kort.",
+      "errorGeneric": "Något gick fel. Försök igen om en stund.",
+      "errorNetwork": "Kunde inte skicka formuläret. Kontrollera din anslutning och försök igen."
     },
     "footer": {
       "tagline": "Skapar vackra och hållbara utemiljöer i Stockholmsområdet.",

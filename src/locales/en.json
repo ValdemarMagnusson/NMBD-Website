@@ -135,19 +135,13 @@
         "service": "Service",
         "servicePlaceholder": "Select a service",
         "message": "Message",
-        "submit": "Send"
+        "submit": "Send",
+        "submitting": "Sending..."
       },
       "preselectedMessage": "I am interested in your \"{{service}}\" service and would like to know more.",
-      "successMessage": "Thank you! If your email app did not open automatically, please send to {{email}}.",
-      "mailto": {
-        "subject": "Contact request: {{service}}",
-        "subjectFallback": "Website",
-        "name": "Name",
-        "email": "Email",
-        "phone": "Phone",
-        "service": "Service",
-        "message": "Message"
-      }
+      "successMessage": "Thank you! We have received your message and will get back to you shortly.",
+      "errorGeneric": "Something went wrong. Please try again shortly.",
+      "errorNetwork": "Could not send the form. Check your connection and try again."
     },
     "footer": {
       "tagline": "Creating beautiful, durable outdoor spaces across the Stockholm area.",
