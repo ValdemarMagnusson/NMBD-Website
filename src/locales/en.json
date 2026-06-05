@@ -1,0 +1,160 @@
+{
+  "seo": {
+    "home": {
+      "title": "Nordiska Mark, Bygg & Design AB — Paving, garden design & groundworks",
+      "description": "Nordiska Mark, Bygg & Design AB creates sustainable outdoor spaces with paving, masonry, garden design and full renovation in the Stockholm area."
+    },
+    "contact": {
+      "title": "Contact — Nordiska Mark, Bygg & Design AB",
+      "description": "Contact NMBD for quotes and advice on paving, garden design and outdoor projects."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "expertise": "Expertise",
+    "contact": "Contact",
+    "menu": "Menu",
+    "closeMenu": "Close menu"
+  },
+  "lang": {
+    "switchToEn": "Switch to English",
+    "switchToSv": "Switch to Swedish",
+    "currentEn": "EN",
+    "currentSv": "SV"
+  },
+  "footer": {
+    "contact": "Contact",
+    "location": "Location",
+    "locationValue": "Saltsjö-Boo, Sweden",
+    "copyright": "© {{year}} Nordiska Mark, Bygg & Design AB"
+  },
+  "home": {
+    "eyebrow": "Welcome",
+    "title": "Creating beautiful outdoor spaces.",
+    "lede": "Paving, garden design, masonry and full renovation for homes and businesses.",
+    "cta": "Contact us",
+    "servicesEyebrow": "Services",
+    "servicesTitle": "Our services",
+    "serviceOneTitle": "Paving",
+    "serviceOneBody": "Durable, beautiful stone surfaces for paths, patios and driveways.",
+    "serviceTwoTitle": "Garden design",
+    "serviceTwoBody": "Harmonious gardens with Nordic aesthetics and function.",
+    "serviceThreeTitle": "Full renovation",
+    "serviceThreeBody": "End-to-end outdoor projects from planning to completion."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Get in touch.",
+    "lede": "Fill in the form or email us directly — we'll get back to you as soon as we can.",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "Saltsjö-Boo, Sweden"
+  },
+  "nmbd": {
+    "hero": {
+      "logoAlt": "Nordiska Mark, Bygg & Design AB",
+      "eyebrow": "Outdoor environments · Stockholm",
+      "headline": "Beautiful outdoor spaces, built to last.",
+      "tagline": "Paving, masonry, garden design and groundwork. Designed and built across the Stockholm area.",
+      "cta": "Request a quote"
+    },
+    "counters": {
+      "projects": "Completed projects",
+      "clients": "Happy clients",
+      "years": "Years of experience"
+    },
+    "services": {
+      "eyebrow": "What we do",
+      "heading": "Our services",
+      "intro": "From the first dig to the final stone. We handle every part of your outdoor space.",
+      "cardCta": "Request a quote",
+      "items": {
+        "1": {
+          "title": "Paving",
+          "description": "Artful stone paving for paths and patios. Beautiful and built to last."
+        },
+        "2": {
+          "title": "Concrete slabs",
+          "description": "Hard-wearing concrete slabs, laid with precision for surfaces that last for generations."
+        },
+        "3": {
+          "title": "Garden design",
+          "description": "Harmonious, functional gardens designed with Nordic simplicity."
+        },
+        "4": {
+          "title": "Masonry",
+          "description": "Natural stone walls that pair function with timeless elegance."
+        },
+        "5": {
+          "title": "Full renovation",
+          "description": "We turn tired outdoor spaces into modern landscapes, from idea to finish."
+        },
+        "6": {
+          "title": "Other services",
+          "description": "Drainage, planting and everything in between. We handle the rest."
+        }
+      }
+    },
+    "expertise": {
+      "subtitle": "CREATING BEAUTIFUL OUTDOOR SPACES",
+      "title": "Expert solutions for every need",
+      "description": "At <0>Nordiska Mark, Bygg & Design AB</0> we create sustainable and aesthetically pleasing outdoor environments for both private clients and businesses. With expertise in<1> paving, masonry, garden design and groundworks</1> we transform your patio, driveway or garden into something unique and functional.",
+      "imageAlt": "Professionally laid garden path with stone paving",
+      "items": {
+        "1": {
+          "title": "Professional paving",
+          "body": "Beautiful walkways, terraces and driveways with high-quality materials."
+        },
+        "2": {
+          "title": "Masonry & natural stone work",
+          "body": "Solid, stylish walls, facades and details built to last."
+        },
+        "3": {
+          "title": "Garden design & maintenance",
+          "body": "We create and care for green spaces for a harmonious, welcoming outdoor environment."
+        },
+        "4": {
+          "title": "Groundworks & drainage",
+          "body": "Sustainable ground solutions that ensure a stable foundation for every project."
+        }
+      }
+    },
+    "contact": {
+      "heading": "Contact us",
+      "infoTitle": "Let's create your dream garden",
+      "infoText": "We help you create a beautiful and functional outdoor space that suits your lifestyle. Fill in the form and we will contact you to discuss your project.",
+      "ctaButton": "Contact us now",
+      "mapTitle": "Find us here",
+      "mapIframeTitle": "Nordiska Mark, Bygg & Design AB — map location",
+      "floatingButton": "CONTACT",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "service": "Service",
+        "servicePlaceholder": "Select a service",
+        "message": "Message",
+        "submit": "Send"
+      },
+      "preselectedMessage": "I am interested in your \"{{service}}\" service and would like to know more.",
+      "successMessage": "Thank you! If your email app did not open automatically, please send to {{email}}.",
+      "mailto": {
+        "subject": "Contact request: {{service}}",
+        "subjectFallback": "Website",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "service": "Service",
+        "message": "Message"
+      }
+    },
+    "footer": {
+      "tagline": "Creating beautiful, durable outdoor spaces across the Stockholm area.",
+      "contactHeading": "Contact",
+      "servicesHeading": "Services",
+      "backToTop": "Back to top",
+      "copyright": "© {{year}} Nordiska Mark, Bygg & Design AB. All rights reserved."
+    }
+  }
+}

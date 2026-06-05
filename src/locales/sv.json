@@ -1,0 +1,160 @@
+{
+  "seo": {
+    "home": {
+      "title": "Nordiska Mark, Bygg & Design AB — Stenläggning, trädgårdsdesign & markarbeten",
+      "description": "Nordiska Mark, Bygg & Design AB skapar hållbara utemiljöer med stenläggning, murning, trädgårdsdesign och total renovering i Stockholmsområdet."
+    },
+    "contact": {
+      "title": "Kontakt — Nordiska Mark, Bygg & Design AB",
+      "description": "Kontakta NMBD för offert och rådgivning om stenläggning, trädgårdsdesign och utomhusprojekt."
+    }
+  },
+  "nav": {
+    "home": "Hem",
+    "services": "Tjänster",
+    "expertise": "Expertis",
+    "contact": "Kontakt",
+    "menu": "Meny",
+    "closeMenu": "Stäng meny"
+  },
+  "lang": {
+    "switchToEn": "Byt till engelska",
+    "switchToSv": "Byt till svenska",
+    "currentEn": "EN",
+    "currentSv": "SV"
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "location": "Plats",
+    "locationValue": "Saltsjö-Boo, Sverige",
+    "copyright": "© {{year}} Nordiska Mark, Bygg & Design AB"
+  },
+  "home": {
+    "eyebrow": "Välkommen",
+    "title": "Skapar vackra utemiljöer.",
+    "lede": "Stenläggning, trädgårdsdesign, murning och total renovering för privatpersoner och företag.",
+    "cta": "Kontakta oss",
+    "servicesEyebrow": "Tjänster",
+    "servicesTitle": "Våra tjänster",
+    "serviceOneTitle": "Stenläggning",
+    "serviceOneBody": "Hållbara och estetiska stenbeläggningar för gångar, uteplatser och uppfarter.",
+    "serviceTwoTitle": "Trädgårdsdesign",
+    "serviceTwoBody": "Harmoniska trädgårdar med fokus på nordisk estetik och funktion.",
+    "serviceThreeTitle": "Total renovering",
+    "serviceThreeBody": "Helhetslösningar från planering till färdigt resultat."
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Hör av dig.",
+    "lede": "Fyll i formuläret eller mejla oss direkt — vi återkommer så snart vi kan.",
+    "email": "E-post",
+    "location": "Plats",
+    "locationValue": "Saltsjö-Boo, Sverige"
+  },
+  "nmbd": {
+    "hero": {
+      "logoAlt": "Nordiska Mark, Bygg & Design AB",
+      "eyebrow": "Utemiljöer · Stockholm",
+      "headline": "Vackra utemiljöer, byggda för att hålla.",
+      "tagline": "Stenläggning, murning, trädgårdsdesign och markarbeten. Utformade och byggda i Stockholmsområdet.",
+      "cta": "Begär offert"
+    },
+    "counters": {
+      "projects": "Genomförda projekt",
+      "clients": "Nöjda kunder",
+      "years": "Års erfarenhet"
+    },
+    "services": {
+      "eyebrow": "Vad vi gör",
+      "heading": "Våra tjänster",
+      "intro": "Från första spadtaget till sista stenen. Vi tar hand om hela din utemiljö.",
+      "cardCta": "Begär offert",
+      "items": {
+        "1": {
+          "title": "Stenläggning",
+          "description": "Konstnärlig stenläggning för gångar och uteplatser, vacker och byggd för att hålla."
+        },
+        "2": {
+          "title": "Betongplattor",
+          "description": "Slitstarka betongplattor, lagda med precision för ytor som håller i generationer."
+        },
+        "3": {
+          "title": "Trädgårdsdesign",
+          "description": "Harmoniska, funktionella trädgårdar formgivna med nordisk enkelhet."
+        },
+        "4": {
+          "title": "Murning",
+          "description": "Murar i natursten som förenar funktion med tidlös elegans."
+        },
+        "5": {
+          "title": "Total Renovering",
+          "description": "Vi förvandlar slitna utemiljöer till moderna landskap, från idé till färdigt."
+        },
+        "6": {
+          "title": "Övriga tjänster",
+          "description": "Dränering, plantering och allt däremellan. Vi tar hand om resten."
+        }
+      }
+    },
+    "expertise": {
+      "subtitle": "SKAPAR VACKRA UTEMILJÖER",
+      "title": "Expertlösningar för varje behov",
+      "description": "Vi på <0>Nordiska Mark, Bygg & Design AB</0> skapar hållbara och estetiskt tilltalande utomhusmiljöer för både privatpersoner och företag. Med expertis inom<1> stenläggning, murning, trädgårdsdesign och markarbeten</1> förvandlar vi din uteplats, uppfart eller trädgård till något unikt och funktionellt.",
+      "imageAlt": "Professionellt anlagd trädgårdsgång med stenläggning",
+      "items": {
+        "1": {
+          "title": "Professionell stenläggning",
+          "body": "Vackra gångvägar, terrasser och uppfarter med högkvalitativa material."
+        },
+        "2": {
+          "title": "Murning & naturstensarbeten",
+          "body": "Gedigna och stilrena murar, fasader och detaljer som håller över tid."
+        },
+        "3": {
+          "title": "Trädgårdsdesign & underhåll",
+          "body": "Vi skapar och sköter grönområden för en harmonisk och trivsam utomhusmiljö."
+        },
+        "4": {
+          "title": "Markarbeten & dränering",
+          "body": "Hållbara marklösningar som säkerställer en stabil grund för alla projekt."
+        }
+      }
+    },
+    "contact": {
+      "heading": "Kontakta oss",
+      "infoTitle": "Låt oss skapa din drömträdgård",
+      "infoText": "Vi hjälper dig att skapa en vacker och funktionell utemiljö som passar din livsstil. Fyll i formuläret så kontaktar vi dig för att diskutera ditt projekt.",
+      "ctaButton": "Kontakta oss nu",
+      "mapTitle": "Hitta oss här",
+      "mapIframeTitle": "Nordiska Mark, Bygg & Design AB — plats på karta",
+      "floatingButton": "KONTAKT",
+      "form": {
+        "name": "Namn",
+        "email": "E-post",
+        "phone": "Telefon",
+        "service": "Tjänst",
+        "servicePlaceholder": "Välj tjänst",
+        "message": "Meddelande",
+        "submit": "Skicka"
+      },
+      "preselectedMessage": "Jag är intresserad av er tjänst \"{{service}}\" och skulle vilja veta mer.",
+      "successMessage": "Tack! Om din e-postapp inte öppnades automatiskt, skicka gärna till {{email}}.",
+      "mailto": {
+        "subject": "Kontaktförfrågan: {{service}}",
+        "subjectFallback": "Webbplatsen",
+        "name": "Namn",
+        "email": "E-post",
+        "phone": "Telefon",
+        "service": "Tjänst",
+        "message": "Meddelande"
+      }
+    },
+    "footer": {
+      "tagline": "Skapar vackra och hållbara utemiljöer i Stockholmsområdet.",
+      "contactHeading": "Kontakt",
+      "servicesHeading": "Tjänster",
+      "backToTop": "Till toppen",
+      "copyright": "© {{year}} Nordiska Mark, Bygg & Design AB. Alla rättigheter förbehållna."
+    }
+  }
+}
