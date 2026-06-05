@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <rect width="1200" height="630" fill="#233503"/>
-  <text x="80" y="300" fill="#fff" font-family="system-ui,sans-serif" font-size="72" font-weight="700">Nordiska Mark, Bygg &amp; Design AB</text>
-  <text x="80" y="380" fill="#c8d4b8" font-family="system-ui,sans-serif" font-size="36">nmbd.se</text>
+  <text x="80" y="220" fill="#c8d4b8" font-family="system-ui,sans-serif" font-size="24" font-weight="600" letter-spacing="3">STENLÄGGNING · TRÄDGÅRD · MARKARBETEN</text>
+  <text x="80" y="320" fill="#ffffff" font-family="system-ui,sans-serif" font-size="68" font-weight="700">Nordiska Mark, Bygg &amp; Design AB</text>
+  <text x="80" y="400" fill="#eef2ea" opacity="0.85" font-family="system-ui,sans-serif" font-size="28">Saltsjö-Boo · Värmdö · Stockholmsområdet</text>
+  <text x="80" y="460" fill="#c8d4b8" font-family="system-ui,sans-serif" font-size="36">nmbd.se</text>
 </svg>

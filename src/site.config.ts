@@ -16,6 +16,7 @@ export const site = {
   },
   location: {
     city: "Saltsjö-Boo",
+    region: "Stockholms län",
     country: "SE",
     address: "Värmdövägen 643, 132 41 Saltsjö-Boo",
     label: {
