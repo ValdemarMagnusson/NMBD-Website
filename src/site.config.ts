@@ -12,7 +12,7 @@ export const site = {
   jsonLdScriptId: "nmbd-jsonld",
   defaultLanguage: "sv" as const,
   routes: {
-    contact: "/contact",
+    contact: "/kontakt",
   },
   location: {
     city: "Saltsjö-Boo",
