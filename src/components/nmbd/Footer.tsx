@@ -6,6 +6,8 @@ import { FaArrowUp, FaEnvelope, FaInstagram, FaMapMarkerAlt, FaPhoneAlt } from "
 import colors from "@/lib/colors";
 import { imagePath } from "@/lib/images";
 import { useTranslation } from "@/lib/i18n";
+import { formatOrgNumber, nap } from "@/lib/site-nap";
+import { SERVICES, siteRoutes } from "@/lib/services-config";
 import { site } from "@/site.config";
 
 export default function Footer() {
@@ -21,15 +23,13 @@ export default function Footer() {
 
   const isMobile = windowWidth <= 768;
 
-  const scrollToContact = () =>
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
 
   const scrollToTop = () =>
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-  const services = [1, 2, 3, 4, 5, 6].map((id) => ({
-    id,
-    title: t(`nmbd.services.items.${id}.title`),
+  const services = SERVICES.map((service) => ({
+    slug: service.slug,
+    title: t(`nmbd.services.items.${service.serviceId}.title`),
   }));
 
   const styles = {
@@ -199,19 +199,48 @@ export default function Footer() {
           <div>
             <div style={styles.colHeading}>{t("nmbd.footer.servicesHeading")}</div>
             <ul style={styles.servicesList}>
+              <li>
+                <Link
+                  href={siteRoutes.servicesHub}
+                  style={{ ...styles.serviceLink, textDecoration: "none", display: "inline-block" }}
+                  onMouseEnter={hoverIn}
+                  onMouseLeave={hoverOut}
+                >
+                  {t("nav.services")}
+                </Link>
+              </li>
               {services.map((service) => (
-                <li key={service.id}>
-                  <button
-                    type="button"
-                    style={styles.serviceLink}
-                    onClick={scrollToContact}
+                <li key={service.slug}>
+                  <Link
+                    href={siteRoutes.service(service.slug)}
+                    style={{ ...styles.serviceLink, textDecoration: "none", display: "inline-block" }}
                     onMouseEnter={hoverIn}
                     onMouseLeave={hoverOut}
                   >
                     {service.title}
-                  </button>
+                  </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href={siteRoutes.faq}
+                  style={{ ...styles.serviceLink, textDecoration: "none", display: "inline-block" }}
+                  onMouseEnter={hoverIn}
+                  onMouseLeave={hoverOut}
+                >
+                  {t("nav.faq")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={site.routes.about}
+                  style={{ ...styles.serviceLink, textDecoration: "none", display: "inline-block" }}
+                  onMouseEnter={hoverIn}
+                  onMouseLeave={hoverOut}
+                >
+                  {t("nav.about")}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -219,6 +248,8 @@ export default function Footer() {
         <div style={styles.bottomBar}>
           <p style={styles.copyright}>
             {t("nmbd.footer.copyright", { year: new Date().getFullYear() })}
+            {" · "}
+            {t("nap.orgNumber", { orgNumber: formatOrgNumber(nap.orgNumber) })}
           </p>
           <button
             type="button"

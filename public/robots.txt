@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://nmbd.se/sitemap.xml
+
+# AI site summary: https://nmbd.se/llms.txt

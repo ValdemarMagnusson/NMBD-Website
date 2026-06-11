@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import type { Service } from "@/data/serviceData";
 import colors from "@/lib/colors";
 import { imagePath } from "@/lib/images";
 import { useTranslation } from "@/lib/i18n";
 import { useServiceTranslations } from "@/hooks/useServiceTranslations";
+import { getServiceById, siteRoutes } from "@/lib/services-config";
 
 type ServicesProps = {
   onServiceSelect?: (service: Service) => void;
@@ -220,20 +222,9 @@ export default function Services({ onServiceSelect }: ServicesProps) {
 
         <div style={styles.grid} className="services-grid">
           {services.map((service, index) => {
-            return (
-              <article
-                key={service.id}
-                style={styles.card}
-                className="service-card"
-                onClick={() => handleCardClick(service)}
-                onKeyDown={(event) => {
-                  if (event.key === "Enter" || event.key === " ") {
-                    handleCardClick(service);
-                  }
-                }}
-                role="button"
-                tabIndex={0}
-              >
+            const serviceRoute = getServiceById(service.id);
+            const cardInner = (
+              <>
                 <div style={styles.media} className="service-media">
                   <img
                     src={imagePath(service.backgroundImage)}
@@ -261,6 +252,37 @@ export default function Services({ onServiceSelect }: ServicesProps) {
                 <div style={styles.body}>
                   <p style={styles.description}>{service.description}</p>
                 </div>
+              </>
+            );
+
+            if (serviceRoute) {
+              return (
+                <Link
+                  key={service.id}
+                  href={siteRoutes.service(serviceRoute.slug)}
+                  style={{ ...styles.card, textDecoration: "none", color: "inherit" }}
+                  className="service-card"
+                >
+                  {cardInner}
+                </Link>
+              );
+            }
+
+            return (
+              <article
+                key={service.id}
+                style={styles.card}
+                className="service-card"
+                onClick={() => handleCardClick(service)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    handleCardClick(service);
+                  }
+                }}
+                role="button"
+                tabIndex={0}
+              >
+                {cardInner}
               </article>
             );
           })}

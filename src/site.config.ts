@@ -14,6 +14,10 @@ export const site = {
   defaultLanguage: "sv" as const,
   routes: {
     contact: "/kontakt",
+    servicesHub: "/tjanster",
+    faq: "/faq",
+    about: "/om",
+    privacy: "/integritetspolicy",
   },
   location: {
     city: "Saltsjö-Boo",
@@ -33,6 +37,7 @@ export const site = {
     "Total renovering",
     "Markarbeten",
   ],
+  foundedYear: 2021,
 } as const;
 
 export type Language = "sv" | "en";

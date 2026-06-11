@@ -266,3 +266,107 @@
     transition: none;
   }
 }
+
+/* ── Inner page hero banner (Tier 3/4) ── */
+
+.nmbd-inner .hero-banner {
+  position: relative;
+  width: 100%;
+  height: clamp(220px, 32vw, 320px);
+  background-color: var(--accent-deep, #16230a);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(247, 244, 236, 0.1);
+}
+
+.nmbd-inner .hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(12, 16, 7, 0.9) 0%,
+    rgba(12, 16, 7, 0.74) 45%,
+    rgba(12, 16, 7, 0.22) 100%
+  );
+}
+
+.nmbd-inner .hero-banner-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1280px, calc(100% - 3rem));
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #f7f4ec;
+  padding: 1.5rem 0;
+}
+
+.nmbd-inner .hero-banner .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(247, 244, 236, 0.72);
+  margin: 0 0 0.75rem;
+  font-family: var(--font-sans-stack);
+}
+
+.nmbd-inner .hero-banner .eyebrow::before {
+  content: "";
+  width: 1.75rem;
+  height: 1px;
+  background: rgba(169, 192, 123, 0.75);
+  flex-shrink: 0;
+}
+
+.nmbd-inner .hero-banner h1 {
+  font-family: var(--font-display-stack);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.005em;
+  margin: 0 0 0.75rem;
+  color: #f7f4ec;
+  max-width: 22ch;
+}
+
+.nmbd-inner .hero-banner p.subtitle {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin: 0;
+  color: rgba(247, 244, 236, 0.78);
+  max-width: 44ch;
+  font-family: var(--font-sans-stack);
+}
+
+.nmbd-inner .page-hero {
+  height: clamp(200px, 28vw, 280px);
+}
+
+.nmbd-inner .page-hero .hero-banner-inner {
+  justify-content: center;
+}
+
+.nmbd-inner .page-hero .eyebrow a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nmbd-inner .page-hero .eyebrow a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .nmbd-inner .hero-banner-inner {
+    width: min(1280px, calc(100% - 2rem));
+  }
+}

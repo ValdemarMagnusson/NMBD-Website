@@ -1,23 +1,26 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/hooks/useLanguage";
 import colors from "@/lib/colors";
 import { imagePath } from "@/lib/images";
 import { useTranslation } from "@/lib/i18n";
+import { site } from "@/site.config";
 
 const MENU_LINKS = [
-  { key: "services", href: "/tjanster" },
-  { key: "expertise", target: "expertise" },
-  { key: "faq", href: "/faq" },
-  { key: "contact", target: "contact" },
+  { key: "home", href: "/" },
+  { key: "services", href: site.routes.servicesHub },
+  { key: "about", href: site.routes.about },
+  { key: "faq", href: site.routes.faq },
+  { key: "contact", href: site.routes.contact },
 ] as const;
 
-export default function ScrollNav() {
+export default function InnerPageNav() {
+  const pathname = usePathname();
   const { t } = useTranslation();
   const { language, toggleLanguage } = useLanguage();
-  const [visible, setVisible] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -29,27 +32,11 @@ export default function ScrollNav() {
   }, []);
 
   useEffect(() => {
-    const onScroll = () => {
-      setVisible(window.scrollY > window.innerHeight * 0.7);
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
   }, [menuOpen]);
-
-  const goTo = (target: string) => {
-    setMenuOpen(false);
-    requestAnimationFrame(() => {
-      document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
-    });
-  };
 
   const nextLangLabel =
     language === "sv" ? t("lang.switchToEn") : t("lang.switchToSv");
@@ -67,14 +54,10 @@ export default function ScrollNav() {
       alignItems: "center",
       justifyContent: "space-between",
       padding: isMobile ? "0 20px" : "0 32px",
-      background: "rgba(12, 16, 7, 0.9)",
+      background: "rgba(12, 16, 7, 0.94)",
       backdropFilter: "blur(10px)",
       WebkitBackdropFilter: "blur(10px)",
       borderBottom: "1px solid rgba(247, 244, 236, 0.12)",
-      transform: visible ? "translateY(0)" : "translateY(-100%)",
-      opacity: visible ? 1 : 0,
-      transition: "transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s ease",
-      pointerEvents: visible ? ("auto" as const) : ("none" as const),
       boxSizing: "border-box" as const,
     },
     hamburger: {
@@ -129,6 +112,7 @@ export default function ScrollNav() {
       letterSpacing: "0.14em",
       textTransform: "uppercase" as const,
       whiteSpace: "nowrap" as const,
+      textDecoration: "none",
       transition: "background-color 0.25s ease, color 0.25s ease",
     },
     overlay: {
@@ -231,14 +215,18 @@ export default function ScrollNav() {
     },
   };
 
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
+
   return (
     <>
-      <header style={styles.bar} className="scroll-nav">
+      <header style={styles.bar} className="inner-page-nav">
         <button
           type="button"
           style={styles.hamburger}
           className="scroll-nav-burger"
           aria-label={t("nav.menu")}
+          aria-expanded={menuOpen}
           onClick={() => setMenuOpen(true)}
         >
           <span style={styles.hamburgerLine} />
@@ -254,14 +242,9 @@ export default function ScrollNav() {
           />
         </Link>
 
-        <button
-          type="button"
-          style={styles.cta}
-          className="scroll-nav-cta"
-          onClick={() => goTo("contact")}
-        >
+        <Link href={site.routes.contact} style={styles.cta} className="scroll-nav-cta">
           {t("nmbd.hero.cta")}
-        </button>
+        </Link>
       </header>
 
       <div style={styles.overlay} className="nav-menu" aria-hidden={!menuOpen}>
@@ -283,30 +266,23 @@ export default function ScrollNav() {
           </button>
         </div>
 
-        <nav style={styles.menuLinks}>
-          {MENU_LINKS.map((link) =>
-            "href" in link ? (
-              <Link
-                key={link.key}
-                href={link.href}
-                style={{ ...styles.menuLink, textDecoration: "none" }}
-                className="nav-menu-link"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t(`nav.${link.key}`)}
-              </Link>
-            ) : (
-              <button
-                key={link.key}
-                type="button"
-                style={styles.menuLink}
-                className="nav-menu-link"
-                onClick={() => goTo(link.target)}
-              >
-                {t(`nav.${link.key}`)}
-              </button>
-            ),
-          )}
+        <nav style={styles.menuLinks} aria-label={t("nav.menu")}>
+          {MENU_LINKS.map((link) => (
+            <Link
+              key={link.key}
+              href={link.href}
+              style={{
+                ...styles.menuLink,
+                textDecoration: "none",
+                color: isActive(link.href) ? colors.sage : colors.cream,
+              }}
+              className="nav-menu-link"
+              aria-current={isActive(link.href) ? "page" : undefined}
+              onClick={() => setMenuOpen(false)}
+            >
+              {t(`nav.${link.key}`)}
+            </Link>
+          ))}
         </nav>
 
         <div style={styles.overlayBottom}>

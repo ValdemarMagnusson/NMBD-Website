@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { site, type Language } from "../site.config";
+import { buildJsonLd } from "./schema-graph";
 
 export const SITE_ORIGIN = site.origin;
 export const SITE_NAME = site.name;
@@ -11,50 +12,14 @@ export type SeoConfig = {
   path: string;
   lang: Language;
   image?: string;
+  jsonLd?: Record<string, unknown>;
 };
 
 function buildPageUrl(path: string): string {
   return path === "/" ? `${SITE_ORIGIN}/` : `${SITE_ORIGIN}${path}`;
 }
 
-export function buildJsonLd(description: string, lang: Language) {
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["Organization", "LocalBusiness"],
-        "@id": `${SITE_ORIGIN}/#business`,
-        name: SITE_NAME,
-        alternateName: site.shortName,
-        url: SITE_ORIGIN,
-        logo: `${SITE_ORIGIN}/favicon.ico`,
-        image: DEFAULT_OG_IMAGE,
-        email: site.email,
-        telephone: site.phone,
-        description,
-        priceRange: "$$",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: site.location.address,
-          addressLocality: site.location.city,
-          addressRegion: site.location.region,
-          addressCountry: site.location.country,
-        },
-        areaServed: [site.location.city, "Värmdö", "Stockholm", "Nacka"],
-        knowsAbout: site.knowsAbout,
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${SITE_ORIGIN}/#website`,
-        name: site.shortName,
-        alternateName: SITE_NAME,
-        url: SITE_ORIGIN,
-        publisher: { "@id": `${SITE_ORIGIN}/#business` },
-        inLanguage: lang === "sv" ? ["sv", "en"] : ["en", "sv"],
-      },
-    ],
-  };
-}
+export { buildJsonLd };
 
 export function buildMetadata({
   title,
@@ -91,12 +56,9 @@ export function buildMetadata({
       },
     },
     icons: {
-      icon: [
-        { url: "/favicon.ico", sizes: "48x48" },
-        { url: "/icons/favicon192.png", type: "image/png", sizes: "192x192" },
-      ],
+      icon: [{ url: "/favicon.ico", sizes: "48x48", type: "image/png" }],
       shortcut: "/favicon.ico",
-      apple: "/icons/favicon192.png",
+      apple: "/favicon.ico",
     },
     openGraph: {
       type: "website",
@@ -141,7 +103,7 @@ function upsertLink(rel: string, href: string): void {
   el.setAttribute("href", href);
 }
 
-function upsertJsonLd(description: string, lang: Language): void {
+function upsertJsonLd(jsonLd: Record<string, unknown>): void {
   let script = document.getElementById(
     site.jsonLdScriptId,
   ) as HTMLScriptElement | null;
@@ -152,7 +114,7 @@ function upsertJsonLd(description: string, lang: Language): void {
     document.head.appendChild(script);
   }
 
-  script.textContent = JSON.stringify(buildJsonLd(description, lang));
+  script.textContent = JSON.stringify(jsonLd);
 }
 
 /** Client-side SEO updates when language or route changes. */
@@ -162,6 +124,7 @@ export function applySeo({
   path,
   lang,
   image = DEFAULT_OG_IMAGE,
+  jsonLd,
 }: SeoConfig): void {
   const url = buildPageUrl(path);
 
@@ -183,5 +146,5 @@ export function applySeo({
   upsertMeta("name", "twitter:description", description);
   upsertMeta("name", "twitter:image", image);
 
-  upsertJsonLd(description, lang);
+  upsertJsonLd(jsonLd ?? buildJsonLd(description, lang));
 }

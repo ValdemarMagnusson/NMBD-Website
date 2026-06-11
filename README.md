@@ -1,6 +1,6 @@
 # Guvani App Starter (Level 3)
 
-Next.js + TypeScript app template for **client projects that may need a backend**. Deployed on **Vercel**.
+Next.js + TypeScript app template for **client projects that may need a backend**. Hosted on **Vercel**; domain and DNS typically on **Cloudflare**.
 
 Includes bilingual i18n (sv/en), SEO (Next.js metadata + runtime language updates), and a backend decision guide for coding agents.
 
@@ -22,12 +22,16 @@ npm run dev
 
 Health check: `GET /api/health`
 
-## Deploy (Vercel)
+## Deploy (Vercel + Cloudflare DNS)
 
 1. Push to GitHub.
 2. Import repo in [Vercel](https://vercel.com).
 3. Add environment variables from `.env.example` as needed.
-4. Set `NEXT_PUBLIC_SITE_URL` to the production domain.
+4. Add the production domain in Vercel → **Settings → Domains**.
+5. Point **Cloudflare DNS** at Vercel (grey cloud / DNS-only by default).
+6. Set `NEXT_PUBLIC_SITE_URL` to the canonical production URL.
+
+Full steps, apex/`www`, and proxy vs DNS-only: **[docs/BACKEND.md](docs/BACKEND.md#deployment--vercel--cloudflare-dns)**.
 
 ## Project structure
 

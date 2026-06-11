@@ -7,11 +7,51 @@
     "contact": {
       "title": "Kontakt — Nordiska Mark, Bygg & Design AB | nmbd.se",
       "description": "Kontakta NMBD för kostnadsfri offert och rådgivning om stenläggning, trädgårdsdesign, murning och utomhusprojekt i Saltsjö-Boo och Värmdö."
+    },
+    "tjanster": {
+      "title": "Tjänster — Stenläggning, trädgårdsdesign & markarbeten | nmbd.se",
+      "description": "Se NMBD:s tjänster: stenläggning, betongplattor, trädgårdsdesign, murning och total renovering i Saltsjö-Boo, Värmdö och Stockholmsområdet."
+    },
+    "faq": {
+      "title": "Vanliga frågor — NMBD stenläggning & utemiljö | nmbd.se",
+      "description": "Svar på vanliga frågor om pris, tidsplan, ROT-avdrag, material och arbetsområde för stenläggning och utemiljöprojekt med NMBD."
+    },
+    "om": {
+      "title": "Om oss — Nordiska Mark, Bygg & Design AB | nmbd.se",
+      "description": "NMBD grundades 2021 och utför stenläggning, trädgårdsdesign och markarbeten i Saltsjö-Boo och Stockholmsområdet. Org.nr 559331-3306."
+    },
+    "privacy": {
+      "title": "Integritetspolicy — NMBD | nmbd.se",
+      "description": "Så behandlar Nordiska Mark, Bygg & Design AB personuppgifter från kontaktformulär och webbplatsbesök."
+    },
+    "services": {
+      "stenlaggning": {
+        "title": "Stenläggning Saltsjö-Boo & Värmdö — NMBD",
+        "description": "Professionell stenläggning för uppfarter, gångar och uteplatser i Saltsjö-Boo, Värmdö och Stockholmsområdet. Kostnadsfri offert från NMBD."
+      },
+      "betongplattor": {
+        "title": "Betongplattor & plattläggning — NMBD",
+        "description": "Slitstarka betongplattor lagda med precision för terrasser och gångar. NMBD arbetar i Saltsjö-Boo, Värmdö och närområdet."
+      },
+      "tradgardsdesign": {
+        "title": "Trädgårdsdesign Stockholm — NMBD",
+        "description": "Harmonisk trädgårdsdesign med nordisk estetik. Planering, plantering och helhetslösningar från NMBD i Stockholmsområdet."
+      },
+      "murning": {
+        "title": "Murning & natursten — NMBD Värmdö",
+        "description": "Murar och naturstensdetaljer som förenar funktion och elegans. NMBD bygger stödmurar och murar i Saltsjö-Boo och Värmdö."
+      },
+      "total-renovering": {
+        "title": "Total renovering utemiljö — NMBD",
+        "description": "Helhetsrenovering av utemiljöer från idé till färdigt resultat. NMBD tar stenläggning, markarbete och trädgård i Saltsjö-Boo och Värmdö."
+      }
     }
   },
   "nav": {
     "home": "Hem",
     "services": "Tjänster",
+    "faq": "FAQ",
+    "about": "Om oss",
     "expertise": "Expertis",
     "contact": "Kontakt",
     "menu": "Meny",
@@ -27,7 +67,216 @@
     "contact": "Kontakt",
     "location": "Plats",
     "locationValue": "Saltsjö-Boo, Sverige",
+    "servicesHeading": "Sidor",
     "copyright": "© {{year}} Nordiska Mark, Bygg & Design AB"
+  },
+  "team": {
+    "members": {
+      "lead": {
+        "name": "Projektledning NMBD",
+        "jobTitle": "Projektledare utemiljö",
+        "bio": "Erfaret team som planerar och leder stenläggning, murning och trädgårdsprojekt från offert till färdigt resultat i Stockholmsområdet.",
+        "imageAlt": "NMBD — projektledning utemiljöprojekt"
+      }
+    }
+  },
+  "pages": {
+    "tjanster": {
+      "eyebrow": "Tjänster",
+      "title": "Våra tjänster",
+      "intro": "Vi tar hand om hela utemiljön — från markarbete och dränering till stenläggning, murning och trädgårdsdesign i Saltsjö-Boo, Värmdö och Stockholmsområdet.",
+      "viewService": "Läs mer om tjänsten",
+      "outro": "Osäker på vilken lösning som passar? Vi hjälper dig gärna med rådgivning och kostnadsfri offert.",
+      "faqLink": "Vanliga frågor"
+    },
+    "servicesShared": {
+      "detailsHeading": "Så arbetar vi",
+      "includesHeading": "Det här ingår ofta"
+    },
+    "services": {
+      "backToHub": "Alla tjänster",
+      "stenlaggning": {
+        "title": "Stenläggning",
+        "summary": "Uppfarter, gångar och uteplatser i natursten och marksten.",
+        "intro": "Vi lägger hållbara stenbeläggningar med rätt bärlager, dränering och fall — anpassat efter tomt, trafik och estetik.",
+        "body": [
+          "Stenläggning är kärnan i det vi gör. Oavsett om det gäller en ny uppfart, en terrass eller gångvägar genom trädgården planerar vi ytan tillsammans med dig och väljer sten som passar både miljön och användningen.",
+          "Vi arbetar i Saltsjö-Boo, Värmdö, Nacka och övriga Stockholmsområdet. Alla projekt inleds med hembesök och kostnadsfri offert."
+        ],
+        "bullets": [
+          "Marksten, granit och smågatsten",
+          "Uppfarter, terrasser och gångar",
+          "Kantsten och dränering",
+          "ROT-avdrag 30 % på arbetskostnad"
+        ],
+        "cta": "Begär offert — stenläggning"
+      },
+      "betongplattor": {
+        "title": "Betongplattor",
+        "summary": "Slitstarka plattor för terrasser, gångar och gårdar.",
+        "intro": "Betongplattor ger en jämn, lättskött yta med många format och kulörer — perfekt när du vill kombinera funktion och modern design.",
+        "body": [
+          "Vi lägger betongplattor med stabil bäryta och korrekt fogning så att ytan håller i generationer. Plattorna passar både vid hus och som större ytor kring garage och entréer.",
+          "Tillsammans väljer vi storlek, mönster och kantdetaljer. Markarbete och dränering ingår i vårt helhetsgrepp."
+        ],
+        "bullets": [
+          "Flera format och färger",
+          "Terrasser och infarter",
+          "Kombination med natursten",
+          "Fast pris efter hembesök"
+        ],
+        "cta": "Begär offert — betongplattor"
+      },
+      "tradgardsdesign": {
+        "title": "Trädgårdsdesign",
+        "summary": "Harmoniska trädgårdar med nordisk enkelhet.",
+        "intro": "Vi formger utemiljöer som känns genomtänkta — med rätt proportioner, växtval och hårda ytor i balans.",
+        "body": [
+          "Trädgårdsdesign hos oss innebär mer än plantering. Vi ser helheten: stigar, murar, belysning och ytor som binder ihop huset med trädgården.",
+          "Från skiss till färdig anläggning får du en partner som kan både designa och bygga — utan att tappa kvaliteten under resans gång."
+        ],
+        "bullets": [
+          "Skiss och rådgivning",
+          "Plantering och rabatter",
+          "Sten- och grusgångar",
+          "Underhållsplan vid behov"
+        ],
+        "cta": "Begär offert — trädgårdsdesign"
+      },
+      "murning": {
+        "title": "Murning",
+        "summary": "Stödmurar och murar i natursten.",
+        "intro": "Murar skapar nivåer, avgränsningar och karaktär. Vi murar i natursten med fokus på stabilitet och tidlös form.",
+        "body": [
+          "Oavsett om du behöver en stödmur mot sluttning, en låg avgränsning runt uteplatsen eller en fasad i natursten bygger vi lösningen från grunden.",
+          "Vi kombinerar gärna murning med stenläggning och trappor så att helheten känns sammanhängande."
+        ],
+        "bullets": [
+          "Stödmurar och låga murar",
+          "Natursten och granit",
+          "Trappor och nivåskillnader",
+          "Dränering bakom mur"
+        ],
+        "cta": "Begär offert — murning"
+      },
+      "total-renovering": {
+        "title": "Total renovering",
+        "summary": "Helhetsrenovering av utemiljöer från idé till färdigt.",
+        "intro": "När hela utemiljön behöver förnyas tar vi projektet från rivning och markarbete till färdig sten, mur och grönska.",
+        "body": [
+          "Total renovering passar när flera moment ska samordnas — till exempel ny uppfart, uteplats, mur och plantering i samma etapp.",
+          "Du får en kontaktperson, tydlig tidsplan och ett resultat där alla delar hänger ihop estetiskt och tekniskt."
+        ],
+        "bullets": [
+          "Projektledning och samordning",
+          "Markarbete och dränering",
+          "Sten, mur och trädgård",
+          "ROT-avdrag där det gäller"
+        ],
+        "cta": "Begär offert — total renovering"
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Vanliga frågor",
+      "intro": "Här svarar vi på det vi oftast får frågor om — pris, tidsplan, ROT och hur ett projekt går till.",
+      "tocLabel": "Innehåll",
+      "cta": "Kontakta oss",
+      "servicesLink": "Se våra tjänster",
+      "items": [
+        {
+          "q": "Hur mycket kostar stenläggning?",
+          "a": "Priset beror på yta, stenval, markförhållanden och om dränering behövs. Efter hembesök lämnar vi en fast offert. ROT-avdrag på 30 % av arbetskostnaden kan sänka slutpriset."
+        },
+        {
+          "q": "Erbjuder ni kostnadsfri offert?",
+          "a": "Ja. Vi börjar med ett hembesök, går igenom önskemål och lämnar skriftlig offert utan kostnad."
+        },
+        {
+          "q": "Hur lång tid tar ett projekt?",
+          "a": "Mindre gångar kan ta några dagar. Större uppfarter eller helhetsrenoveringar kan ta flera veckor beroende på väder och omfattning. Du får en tidsplan i offerten."
+        },
+        {
+          "q": "Vilka områden arbetar ni i?",
+          "a": "Vi utgår från Saltsjö-Boo och arbetar i Värmdö, Nacka, Tyresö och övriga Stockholmsområdet. Hör av dig om du är osäker — vi återkommer med besked."
+        },
+        {
+          "q": "Kan jag använda ROT-avdrag?",
+          "a": "Ja, på arbetskostnaden för godkända arbeten som stenläggning, murning och markarbete. Vi hjälper till med underlag för Skatteverket."
+        },
+        {
+          "q": "Hur går processen till?",
+          "a": "Kontakt → hembesök → offert → planering → genomförande → slutbesiktning. Du har en kontaktperson genom hela projektet."
+        },
+        {
+          "q": "Vilka material använder ni?",
+          "a": "Marksten, granit, smågatsten, betongplattor och natursten från etablerade leverantörer. Vi rekommenderar material utifrån plats, användning och budget."
+        },
+        {
+          "q": "Behöver jag göra markarbete själv?",
+          "a": "Nej. Vi kan ta schakt, dränering, bärlager och finplanering som del av uppdraget."
+        },
+        {
+          "q": "Hur lång väntetid har ni?",
+          "a": "Väntetiden varierar med säsong. Kontakta oss så får du aktuell tidplan — ju tidigare du bokar, desto lättare att planera vår och sommar."
+        },
+        {
+          "q": "Är ni försäkrade?",
+          "a": "Ja. Vi har ansvarsförsäkring och företagets org.nr är 559331-3306. Referenser och projektbilder kan visas på förfrågan."
+        }
+      ]
+    },
+    "om": {
+      "eyebrow": "Om oss",
+      "title": "Om NMBD",
+      "intro": "Nordiska Mark, Bygg & Design AB planerar och bygger utemiljöer i Stockholmsområdet — från stenläggning och murning till trädgårdsdesign.",
+      "companyHeading": "Företaget",
+      "companyBody": "Vi grundades 2021 och utgår från Saltsjö-Boo. Varje projekt börjar med hembesök och kostnadsfri offert. Vi samordnar markarbete, sten och grönska så att slutresultatet håller över tid.",
+      "facts": {
+        "legalName": "Bolagsnamn",
+        "orgNumber": "Org.nr",
+        "founded": "Grundat",
+        "foundedValue": "{{year}} (registrerat bolag)",
+        "serviceArea": "Arbetsområde"
+      },
+      "teamHeading": "Team",
+      "teamIntro": "Erfarna hantverkare och projektledare — ett kontaktpersonsteam från offert till färdigt projekt.",
+      "trustHeading": "Trygghet & kvalitet",
+      "trustPoints": [
+        "Registrerat aktiebolag — org.nr 559331-3306",
+        "Ansvarsförsäkring",
+        "ROT-avdrag 30 % på arbetskostnad där det gäller",
+        "Fast pris efter hembesök",
+        "Referenser och projektbilder på förfrågan"
+      ],
+      "cta": "Begär offert",
+      "privacyLink": "Integritetspolicy"
+    },
+    "privacy": {
+      "eyebrow": "Integritet",
+      "title": "Integritetspolicy",
+      "intro": "Vi värnar om dina personuppgifter. Denna policy beskriver vilken data vi samlar in via webbplatsen och kontaktformulär.",
+      "controller": "Personuppgiftsansvarig",
+      "contact": "Kontakt",
+      "sections": [
+        {
+          "title": "Vilka uppgifter samlas in?",
+          "body": "Via kontaktformulär kan vi behandla namn, e-post, telefonnummer, meddelande och valfri tjänst. Uppgifterna används för att besvara din förfrågan och lämna offert."
+        },
+        {
+          "title": "Laglig grund och lagring",
+          "body": "Behandlingen sker för att tillmötesgå din förfrågan (berättigat intresse/avtal). Uppgifter sparas så länge det behövs för att hantera ärendet och enligt bokföringsregler."
+        },
+        {
+          "title": "Delning och cookies",
+          "body": "Vi säljer inte personuppgifter. Formulärdata kan behandlas via vår e-post- och hostingleverantör inom EU/EES. Webbplatsen använder nödvändiga cookies för språkval om du aktiverar det."
+        },
+        {
+          "title": "Dina rättigheter",
+          "body": "Du kan begära registerutdrag, rättelse eller radering genom att kontakta oss på info@nmbd.se. Du kan också klaga till Integritetsskyddsmyndigheten (IMY)."
+        }
+      ]
+    }
   },
   "home": {
     "eyebrow": "Välkommen",
@@ -50,6 +299,14 @@
     "email": "E-post",
     "location": "Plats",
     "locationValue": "Saltsjö-Boo, Sverige"
+  },
+  "nap": {
+    "email": "E-post",
+    "phone": "Telefon",
+    "address": "Besöksadress",
+    "legalName": "Företag",
+    "orgNumber": "Org.nr {{orgNumber}}",
+    "parentCompany": "Drivs av {{company}}"
   },
   "nmbd": {
     "hero": {

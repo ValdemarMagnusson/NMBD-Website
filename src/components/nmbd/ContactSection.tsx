@@ -7,6 +7,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { getServiceTitle, useServiceTranslations } from "@/hooks/useServiceTranslations";
 import colors from "@/lib/colors";
 import { submitContactForm } from "@/lib/contact-api";
+import { formatOrgNumber, nap } from "@/lib/site-nap";
 import { useTranslation } from "@/lib/i18n";
 import { site } from "@/site.config";
 
@@ -355,6 +356,9 @@ export default function ContactSection({ preselectedService }: ContactSectionPro
                 <FaMapMarkerAlt style={styles.contactIcon} />
                 <span>{site.location.address}</span>
               </div>
+              <p style={{ ...styles.infoText, marginTop: "12px", marginBottom: 0 }}>
+                {nap.legalName} · {t("nap.orgNumber", { orgNumber: formatOrgNumber(nap.orgNumber) })}
+              </p>
 
               <div style={styles.mapWrapper}>
                 <div style={styles.mapTitle}>

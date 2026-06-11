@@ -7,11 +7,51 @@
     "contact": {
       "title": "Contact — Nordiska Mark, Bygg & Design AB | nmbd.se",
       "description": "Contact NMBD for a free quote and advice on paving, garden design, masonry and outdoor projects in Saltsjö-Boo and Värmdö."
+    },
+    "tjanster": {
+      "title": "Services — Paving, garden design & groundworks | nmbd.se",
+      "description": "Explore NMBD services: paving, concrete slabs, garden design, masonry and full outdoor renovation in Saltsjö-Boo, Värmdö and the Stockholm area."
+    },
+    "faq": {
+      "title": "FAQ — NMBD paving & outdoor projects | nmbd.se",
+      "description": "Answers to common questions about pricing, timelines, ROT deduction, materials and service areas for NMBD outdoor projects."
+    },
+    "om": {
+      "title": "About us — Nordiska Mark, Bygg & Design AB | nmbd.se",
+      "description": "NMBD was founded in 2021 and delivers paving, garden design and groundworks in Saltsjö-Boo and the Stockholm area. Org. no. 559331-3306."
+    },
+    "privacy": {
+      "title": "Privacy policy — NMBD | nmbd.se",
+      "description": "How Nordiska Mark, Bygg & Design AB handles personal data from contact forms and website visits."
+    },
+    "services": {
+      "stenlaggning": {
+        "title": "Paving Saltsjö-Boo & Värmdö — NMBD",
+        "description": "Professional paving for driveways, paths and patios in Saltsjö-Boo, Värmdö and the Stockholm area. Free quote from NMBD."
+      },
+      "betongplattor": {
+        "title": "Concrete slabs & paving — NMBD",
+        "description": "Hard-wearing concrete slabs laid with precision for terraces and walkways. NMBD works across Saltsjö-Boo, Värmdö and nearby areas."
+      },
+      "tradgardsdesign": {
+        "title": "Garden design Stockholm — NMBD",
+        "description": "Harmonious garden design with Nordic aesthetics. Planning, planting and full solutions from NMBD in the Stockholm area."
+      },
+      "murning": {
+        "title": "Masonry & natural stone — NMBD Värmdö",
+        "description": "Walls and natural stone details that combine function and elegance. NMBD builds retaining walls in Saltsjö-Boo and Värmdö."
+      },
+      "total-renovering": {
+        "title": "Full outdoor renovation — NMBD",
+        "description": "Complete outdoor renovations from idea to finish. NMBD handles paving, groundworks and gardens in Saltsjö-Boo and Värmdö."
+      }
     }
   },
   "nav": {
     "home": "Home",
     "services": "Services",
+    "faq": "FAQ",
+    "about": "About",
     "expertise": "Expertise",
     "contact": "Contact",
     "menu": "Menu",
@@ -27,7 +67,216 @@
     "contact": "Contact",
     "location": "Location",
     "locationValue": "Saltsjö-Boo, Sweden",
+    "servicesHeading": "Pages",
     "copyright": "© {{year}} Nordiska Mark, Bygg & Design AB"
+  },
+  "team": {
+    "members": {
+      "lead": {
+        "name": "NMBD project team",
+        "jobTitle": "Outdoor project lead",
+        "bio": "Experienced team planning and delivering paving, masonry and garden projects from quote to completion across the Stockholm area.",
+        "imageAlt": "NMBD — outdoor project team"
+      }
+    }
+  },
+  "pages": {
+    "tjanster": {
+      "eyebrow": "Services",
+      "title": "Our services",
+      "intro": "We handle the full outdoor environment — from groundworks and drainage to paving, masonry and garden design in Saltsjö-Boo, Värmdö and the Stockholm area.",
+      "viewService": "Read more",
+      "outro": "Not sure which solution fits? We are happy to advise and provide a free quote.",
+      "faqLink": "FAQ"
+    },
+    "servicesShared": {
+      "detailsHeading": "How we work",
+      "includesHeading": "Often includes"
+    },
+    "services": {
+      "backToHub": "All services",
+      "stenlaggning": {
+        "title": "Paving",
+        "summary": "Driveways, paths and patios in natural stone and setts.",
+        "intro": "We lay durable stone surfaces with the right sub-base, drainage and fall — tailored to your site, traffic and aesthetics.",
+        "body": [
+          "Paving is at the core of what we do. Whether it is a new driveway, terrace or garden paths, we plan the surface with you and choose stone that suits both the setting and use.",
+          "We work in Saltsjö-Boo, Värmdö, Nacka and the wider Stockholm area. Every project starts with a site visit and free quote."
+        ],
+        "bullets": [
+          "Setts, granite and cobbles",
+          "Driveways, terraces and paths",
+          "Kerbs and drainage",
+          "30% ROT deduction on labour"
+        ],
+        "cta": "Request quote — paving"
+      },
+      "betongplattor": {
+        "title": "Concrete slabs",
+        "summary": "Hard-wearing slabs for terraces, paths and yards.",
+        "intro": "Concrete slabs give an even, low-maintenance surface with many formats and colours — ideal when you want function and modern design.",
+        "body": [
+          "We lay concrete slabs on a stable base with correct jointing so the surface lasts for generations. Slabs work both beside the house and for larger areas around garages and entrances.",
+          "Together we choose size, pattern and edge details. Groundworks and drainage are part of our full-service approach."
+        ],
+        "bullets": [
+          "Multiple formats and colours",
+          "Terraces and driveways",
+          "Combined with natural stone",
+          "Fixed price after site visit"
+        ],
+        "cta": "Request quote — concrete slabs"
+      },
+      "tradgardsdesign": {
+        "title": "Garden design",
+        "summary": "Harmonious gardens with Nordic simplicity.",
+        "intro": "We shape outdoor spaces that feel considered — with the right proportions, planting and hard surfaces in balance.",
+        "body": [
+          "Garden design with us is more than planting. We see the whole: paths, walls, lighting and surfaces that connect the house to the garden.",
+          "From sketch to finished installation you get a partner who can both design and build — without losing quality along the way."
+        ],
+        "bullets": [
+          "Sketches and advice",
+          "Planting and borders",
+          "Stone and gravel paths",
+          "Maintenance plan if needed"
+        ],
+        "cta": "Request quote — garden design"
+      },
+      "murning": {
+        "title": "Masonry",
+        "summary": "Retaining walls and natural stone walls.",
+        "intro": "Walls create levels, boundaries and character. We build in natural stone with a focus on stability and timeless form.",
+        "body": [
+          "Whether you need a retaining wall on a slope, a low boundary around a patio or a natural stone facade, we build the solution from the ground up.",
+          "We often combine masonry with paving and steps so the whole feels coherent."
+        ],
+        "bullets": [
+          "Retaining and low walls",
+          "Natural stone and granite",
+          "Steps and level changes",
+          "Drainage behind walls"
+        ],
+        "cta": "Request quote — masonry"
+      },
+      "total-renovering": {
+        "title": "Full renovation",
+        "summary": "Complete outdoor renovations from idea to finish.",
+        "intro": "When the whole outdoor space needs renewal we take the project from demolition and groundworks to finished stone, walls and planting.",
+        "body": [
+          "Full renovation suits when several tasks must be coordinated — for example a new driveway, patio, wall and planting in one phase.",
+          "You get one contact person, a clear timeline and a result where every part works together aesthetically and technically."
+        ],
+        "bullets": [
+          "Project management and coordination",
+          "Groundworks and drainage",
+          "Stone, walls and garden",
+          "ROT deduction where applicable"
+        ],
+        "cta": "Request quote — full renovation"
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "intro": "Answers to what we are asked most often — pricing, timelines, ROT and how a project works.",
+      "tocLabel": "Contents",
+      "cta": "Contact us",
+      "servicesLink": "See our services",
+      "items": [
+        {
+          "q": "How much does paving cost?",
+          "a": "Price depends on area, stone choice, ground conditions and whether drainage is needed. After a site visit we provide a fixed quote. ROT deduction of 30% on labour can reduce the final cost."
+        },
+        {
+          "q": "Do you offer free quotes?",
+          "a": "Yes. We start with a site visit, discuss your wishes and provide a written quote at no cost."
+        },
+        {
+          "q": "How long does a project take?",
+          "a": "Smaller paths may take a few days. Larger driveways or full renovations can take several weeks depending on weather and scope. You get a timeline in the quote."
+        },
+        {
+          "q": "Which areas do you work in?",
+          "a": "We are based in Saltsjö-Boo and work in Värmdö, Nacka, Tyresö and the wider Stockholm area. Contact us if you are unsure — we will confirm coverage."
+        },
+        {
+          "q": "Can I use the ROT deduction?",
+          "a": "Yes, on labour for approved work such as paving, masonry and groundworks. We help with documentation for the Swedish Tax Agency."
+        },
+        {
+          "q": "What is the process?",
+          "a": "Contact → site visit → quote → planning → execution → final walkthrough. You have one contact person throughout."
+        },
+        {
+          "q": "Which materials do you use?",
+          "a": "Setts, granite, cobbles, concrete slabs and natural stone from established suppliers. We recommend materials based on site, use and budget."
+        },
+        {
+          "q": "Do I need to do groundworks myself?",
+          "a": "No. We can handle excavation, drainage, sub-base and finishing as part of the job."
+        },
+        {
+          "q": "How long is your waiting time?",
+          "a": "Waiting time varies by season. Contact us for the current schedule — the earlier you book, the easier to plan spring and summer."
+        },
+        {
+          "q": "Are you insured?",
+          "a": "Yes. We have liability insurance and the company org. no. is 559331-3306. References and project photos can be shown on request."
+        }
+      ]
+    },
+    "om": {
+      "eyebrow": "About",
+      "title": "About NMBD",
+      "intro": "Nordiska Mark, Bygg & Design AB plans and builds outdoor environments in the Stockholm area — from paving and masonry to garden design.",
+      "companyHeading": "The company",
+      "companyBody": "Founded in 2021 and based in Saltsjö-Boo. Every project starts with a site visit and free quote. We coordinate groundworks, stone and planting so the result lasts.",
+      "facts": {
+        "legalName": "Legal name",
+        "orgNumber": "Org. no.",
+        "founded": "Founded",
+        "foundedValue": "{{year}} (registered company)",
+        "serviceArea": "Service area"
+      },
+      "teamHeading": "Team",
+      "teamIntro": "Experienced craftspeople and project leads — one contact team from quote to finished project.",
+      "trustHeading": "Trust & quality",
+      "trustPoints": [
+        "Registered limited company — org. no. 559331-3306",
+        "Liability insurance",
+        "30% ROT deduction on labour where applicable",
+        "Fixed price after site visit",
+        "References and project photos on request"
+      ],
+      "cta": "Request a quote",
+      "privacyLink": "Privacy policy"
+    },
+    "privacy": {
+      "eyebrow": "Privacy",
+      "title": "Privacy policy",
+      "intro": "We protect your personal data. This policy describes what we collect via the website and contact form.",
+      "controller": "Data controller",
+      "contact": "Contact",
+      "sections": [
+        {
+          "title": "What data do we collect?",
+          "body": "Via the contact form we may process name, email, phone, message and optional service choice. Data is used to respond and provide quotes."
+        },
+        {
+          "title": "Legal basis and retention",
+          "body": "Processing is based on responding to your request (legitimate interest/contract). Data is kept as long as needed for the enquiry and per accounting rules."
+        },
+        {
+          "title": "Sharing and cookies",
+          "body": "We do not sell personal data. Form data may be processed via our email and hosting providers within the EU/EEA. The site uses essential cookies for language preference if enabled."
+        },
+        {
+          "title": "Your rights",
+          "body": "You may request access, correction or deletion by emailing info@nmbd.se. You may also complain to the Swedish Authority for Privacy Protection (IMY)."
+        }
+      ]
+    }
   },
   "home": {
     "eyebrow": "Welcome",
@@ -50,6 +299,15 @@
     "email": "Email",
     "location": "Location",
     "locationValue": "Saltsjö-Boo, Sweden"
+  },
+  "nap": {
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Registered address",
+    "legalName": "Company",
+    "orgNumber": "Org. no. {{orgNumber}}",
+    "parentCompany": "Operated by {{company}}",
+    "serviceArea": "Service area"
   },
   "nmbd": {
     "hero": {

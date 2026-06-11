@@ -5,4 +5,54 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://nmbd.se/kontakt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nmbd.se/tjanster</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nmbd.se/tjanster/stenlaggning</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nmbd.se/tjanster/betongplattor</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nmbd.se/tjanster/tradgardsdesign</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nmbd.se/tjanster/murning</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nmbd.se/tjanster/total-renovering</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nmbd.se/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://nmbd.se/om</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nmbd.se/integritetspolicy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
 </urlset>
