@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaArrowUp, FaEnvelope, FaInstagram, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import colors from "@/lib/colors";
@@ -160,11 +161,13 @@ export default function Footer() {
       <div style={styles.container}>
         <div style={styles.grid}>
           <div style={styles.brandCol}>
-            <img
-              src={imagePath("logo2.png")}
-              alt={t("nmbd.hero.logoAlt")}
-              style={styles.logo}
-            />
+            <Link href="/" aria-label={t("nav.home")}>
+              <img
+                src={imagePath("logo2.png")}
+                alt={t("nmbd.hero.logoAlt")}
+                style={styles.logo}
+              />
+            </Link>
             <a
               href="https://www.instagram.com/nmbd.stockholm/"
               target="_blank"

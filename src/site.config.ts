@@ -4,7 +4,8 @@
 export const site = {
   name: "Nordiska Mark, Bygg & Design AB",
   shortName: "NMBD",
-  origin: "https://nmbd.se",
+  origin:
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://nmbd.se",
   email: "info@nmbd.se",
   phone: "08-400 654 70",
   themeColor: "#233503",
@@ -35,9 +36,3 @@ export const site = {
 } as const;
 
 export type Language = "sv" | "en";
-
-export type SeoPageKey = "home" | "contact";
-
-export function resolveSeoPage(pathname: string): SeoPageKey {
-  return pathname === site.routes.contact ? "contact" : "home";
-}

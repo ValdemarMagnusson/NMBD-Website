@@ -22,7 +22,7 @@ export function buildJsonLd(description: string, lang: Language) {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "LocalBusiness",
+        "@type": ["Organization", "LocalBusiness"],
         "@id": `${SITE_ORIGIN}/#business`,
         name: SITE_NAME,
         alternateName: site.shortName,
@@ -60,8 +60,9 @@ export function buildMetadata({
   title,
   description,
   path,
+  lang = site.defaultLanguage,
   image = DEFAULT_OG_IMAGE,
-}: Omit<SeoConfig, "lang">): Metadata {
+}: SeoConfig): Metadata {
   const url = buildPageUrl(path);
 
   return {
@@ -92,7 +93,6 @@ export function buildMetadata({
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "48x48" },
-        { url: "/icons/favicon32.png", type: "image/png", sizes: "32x32" },
         { url: "/icons/favicon192.png", type: "image/png", sizes: "192x192" },
       ],
       shortcut: "/favicon.ico",
@@ -104,8 +104,8 @@ export function buildMetadata({
       title,
       description,
       url,
-      locale: "sv_SE",
-      alternateLocale: ["en_US"],
+      locale: lang === "sv" ? "sv_SE" : "en_US",
+      alternateLocale: lang === "sv" ? ["en_US"] : ["sv_SE"],
       images: [{ url: image, alt: SITE_NAME }],
     },
     twitter: {

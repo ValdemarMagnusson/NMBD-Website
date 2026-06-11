@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/hooks/useLanguage";
 import colors from "@/lib/colors";
@@ -244,11 +245,13 @@ export default function ScrollNav() {
           <span style={styles.hamburgerLine} />
         </button>
 
-        <img
-          src={imagePath("logo2.png")}
-          alt={t("nmbd.hero.logoAlt")}
-          style={styles.logo}
-        />
+        <Link href="/" aria-label={t("nav.home")} style={{ display: "inline-flex" }}>
+          <img
+            src={imagePath("logo2.png")}
+            alt={t("nmbd.hero.logoAlt")}
+            style={styles.logo}
+          />
+        </Link>
 
         <button
           type="button"

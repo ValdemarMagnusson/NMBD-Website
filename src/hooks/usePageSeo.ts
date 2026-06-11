@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useLanguage } from "./useLanguage";
 import { useTranslation } from "../lib/i18n";
 import { applySeo } from "../lib/seo";
-import { resolveSeoPage } from "../site.config";
+import { resolveSeoPage } from "../lib/page-seo-map";
 
 export function usePageSeo(): void {
   const pathname = usePathname();

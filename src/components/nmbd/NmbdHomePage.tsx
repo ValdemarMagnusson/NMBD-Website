@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import type { Service } from "@/data/serviceData";
-import { usePageSeo } from "@/hooks/usePageSeo";
 import colors from "@/lib/colors";
 import ContactSection from "./ContactSection";
 import ExpertiseSection from "./ExpertiseSection";
@@ -14,7 +13,6 @@ import "@/styles/nmbd/app.css";
 import "@/styles/nmbd/responsive.css";
 
 export default function NmbdHomePage() {
-  usePageSeo();
   const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   const appStyle = {

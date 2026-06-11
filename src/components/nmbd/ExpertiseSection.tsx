@@ -211,6 +211,7 @@ export default function ExpertiseSection() {
               <img
                 src={imagePath("Expertise1.jpg")}
                 alt={t("nmbd.expertise.imageAlt")}
+                loading="lazy"
                 style={styles.image}
               />
               <div style={styles.imageRing} />

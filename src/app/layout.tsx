@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import { Providers } from "@/components/Providers";
 import { buildJsonLd, buildMetadata } from "@/lib/seo";
+import sv from "@/locales/sv.json";
 import { site } from "@/site.config";
 import "./globals.css";
 
@@ -19,16 +20,13 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = buildMetadata({
-  title: `${site.name} — Stenläggning, trädgårdsdesign & markarbeten`,
-  description:
-    "Nordiska Mark, Bygg & Design AB skapar hållbara utemiljöer med stenläggning, murning, trädgårdsdesign och total renovering i Saltsjö-Boo, Värmdö och Stockholmsområdet. ROT-avdrag 30 %.",
+  title: sv.seo.home.title,
+  description: sv.seo.home.description,
   path: "/",
+  lang: site.defaultLanguage,
 });
 
-const homeJsonLd = buildJsonLd(
-  "Nordiska Mark, Bygg & Design AB skapar hållbara utemiljöer med stenläggning, murning, trädgårdsdesign och total renovering i Saltsjö-Boo, Värmdö och Stockholmsområdet.",
-  site.defaultLanguage,
-);
+const homeJsonLd = buildJsonLd(sv.seo.home.description, site.defaultLanguage);
 
 export const viewport: Viewport = {
   themeColor: site.themeColor,
