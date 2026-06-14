@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type FormEvent } from "react";
+import { useRouter } from "next/navigation";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import type { Service } from "@/data/serviceData";
 import { useLanguage } from "@/hooks/useLanguage";
@@ -16,6 +17,7 @@ type ContactSectionProps = {
 };
 
 export default function ContactSection({ preselectedService }: ContactSectionProps) {
+  const router = useRouter();
   const { t } = useTranslation();
   const { language } = useLanguage();
   const services = useServiceTranslations();
@@ -26,7 +28,6 @@ export default function ContactSection({ preselectedService }: ContactSectionPro
     serviceId: "",
     message: "",
   });
-  const [formSubmitted, setFormSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [windowWidth, setWindowWidth] = useState(1200);
@@ -81,17 +82,7 @@ export default function ContactSection({ preselectedService }: ContactSectionPro
     setIsSubmitting(false);
 
     if (result.success) {
-      setFormSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        serviceId: "",
-        message: "",
-      });
-      setTimeout(() => {
-        setFormSubmitted(false);
-      }, 5000);
+      router.push(site.routes.thankYou);
       return;
     }
 
@@ -301,15 +292,6 @@ export default function ContactSection({ preselectedService }: ContactSectionPro
       width: "100%",
       marginTop: "8px",
     },
-    successMessage: {
-      backgroundColor: colors.oliveDeep,
-      color: colors.cream,
-      padding: "16px",
-      borderRadius: "2px",
-      textAlign: "center" as const,
-      fontWeight: 500,
-      marginTop: "8px",
-    },
     errorMessage: {
       backgroundColor: "#f8d7da",
       color: "#721c24",
@@ -478,12 +460,6 @@ export default function ContactSection({ preselectedService }: ContactSectionPro
               {submitError && (
                 <div style={styles.errorMessage} className="error-message">
                   {submitError}
-                </div>
-              )}
-
-              {formSubmitted && (
-                <div style={styles.successMessage} className="success-message">
-                  {t("nmbd.contact.successMessage")}
                 </div>
               )}
             </form>

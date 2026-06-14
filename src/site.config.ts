@@ -14,6 +14,7 @@ export const site = {
   defaultLanguage: "sv" as const,
   routes: {
     contact: "/kontakt",
+    thankYou: "/tack",
     servicesHub: "/tjanster",
     faq: "/faq",
     about: "/om",

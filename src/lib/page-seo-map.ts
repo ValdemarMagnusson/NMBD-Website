@@ -4,6 +4,7 @@ import { site } from "../site.config";
 export type SeoPageKey =
   | "home"
   | "contact"
+  | "thankYou"
   | "tjanster"
   | "faq"
   | "om"
@@ -11,6 +12,7 @@ export type SeoPageKey =
   | `service.${string}`;
 
 export function resolveSeoPage(pathname: string): SeoPageKey {
+  if (pathname === site.routes.thankYou) return "thankYou";
   if (pathname === site.routes.contact) return "contact";
   if (pathname === site.routes.about) return "om";
   if (pathname === site.routes.privacy) return "privacy";

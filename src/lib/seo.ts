@@ -132,7 +132,8 @@ export function applySeo({
   document.documentElement.lang = lang;
 
   upsertMeta("name", "description", description);
-  upsertMeta("name", "robots", "index, follow");
+  const indexable = path !== site.routes.thankYou;
+  upsertMeta("name", "robots", indexable ? "index, follow" : "noindex, nofollow");
   upsertLink("canonical", url);
   upsertMeta("property", "og:type", "website");
   upsertMeta("property", "og:site_name", SITE_NAME);

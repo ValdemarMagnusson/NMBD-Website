@@ -24,6 +24,10 @@
       "title": "Integritetspolicy — NMBD | nmbd.se",
       "description": "Så behandlar Nordiska Mark, Bygg & Design AB personuppgifter från kontaktformulär och webbplatsbesök."
     },
+    "thankYou": {
+      "title": "Tack — NMBD | nmbd.se",
+      "description": "Ditt meddelande har skickats. NMBD återkommer inom 48 timmar."
+    },
     "services": {
       "stenlaggning": {
         "title": "Stenläggning Saltsjö-Boo & Värmdö — NMBD",
@@ -251,6 +255,13 @@
       ],
       "cta": "Begär offert",
       "privacyLink": "Integritetspolicy"
+    },
+    "thankYou": {
+      "eyebrow": "Tack",
+      "title": "Vi har tagit emot ditt meddelande",
+      "lede": "Tack för att du hörde av dig. Vi återkommer till dig inom 48 timmar.",
+      "body": "Behöver du nå oss direkt? Mejla oss på info@nmbd.se eller ring 08-400 654 70.",
+      "backHome": "Tillbaka till startsidan"
     },
     "privacy": {
       "eyebrow": "Integritet",

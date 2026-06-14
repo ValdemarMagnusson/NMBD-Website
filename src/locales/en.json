@@ -24,6 +24,10 @@
       "title": "Privacy policy — NMBD | nmbd.se",
       "description": "How Nordiska Mark, Bygg & Design AB handles personal data from contact forms and website visits."
     },
+    "thankYou": {
+      "title": "Thank you — NMBD | nmbd.se",
+      "description": "Your message has been sent. NMBD will get back to you within 48 hours."
+    },
     "services": {
       "stenlaggning": {
         "title": "Paving Saltsjö-Boo & Värmdö — NMBD",
@@ -251,6 +255,13 @@
       ],
       "cta": "Request a quote",
       "privacyLink": "Privacy policy"
+    },
+    "thankYou": {
+      "eyebrow": "Thank you",
+      "title": "We have received your message",
+      "lede": "Thanks for getting in touch. We will get back to you within 48 hours.",
+      "body": "Need to reach us directly? Email info@nmbd.se or call 08-400 654 70.",
+      "backHome": "Back to home page"
     },
     "privacy": {
       "eyebrow": "Privacy",
