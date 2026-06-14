@@ -59,7 +59,7 @@ function buildOrganizationNode(description: string): Record<string, unknown> {
     legalName: nap.legalName,
     alternateName: site.name,
     url: SITE_ORIGIN,
-    logo: `${SITE_ORIGIN}/favicon.ico`,
+    logo: `${SITE_ORIGIN}/icons/favicon192.png`,
     image: DEFAULT_OG_IMAGE,
     email: nap.email,
     telephone: nap.phone,
