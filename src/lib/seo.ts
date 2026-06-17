@@ -59,7 +59,6 @@ export function buildMetadata({
       icon: [
         { url: "/icons/favicon48.png", type: "image/png", sizes: "48x48" },
         { url: "/favicon.ico", sizes: "48x48" },
-        { url: "/favicon.svg", type: "image/svg+xml" },
         { url: "/icons/favicon32.png", type: "image/png", sizes: "32x32" },
         { url: "/icons/favicon192.png", type: "image/png", sizes: "192x192" },
       ],
