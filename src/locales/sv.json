@@ -388,6 +388,21 @@
         }
       }
     },
+    "about": {
+      "subtitle": "OM OSS",
+      "title": "Människorna bakom varje projekt",
+      "intro": "Ett sammansvetsat team av hantverkare och projektledare som brinner för sten, mark och vackra utemiljöer. Vi tar hand om hela resan — från första skiss till sista sten."
+    },
+    "projects": {
+      "subtitle": "VÅRA PROJEKT",
+      "title": "Arbeten vi är stolta över",
+      "intro": "Från altanbygge och stensättning till kompletta trädgårdsdesigner — ett urval av projekt och visioner från Stockholmsområdet."
+    },
+    "suppliers": {
+      "subtitle": "I SAMARBETE MED",
+      "title": "Våra leverantörer",
+      "intro": "Vi arbetar uteslutande med marknadens ledande leverantörer av natursten, klinker och byggmaterial — för ett resultat som håller i generationer."
+    },
     "contact": {
       "heading": "Kontakta oss",
       "infoTitle": "Låt oss skapa din drömträdgård",
