@@ -7,9 +7,12 @@ import colors from "@/lib/colors";
 import ContactSection from "./ContactSection";
 import ExpertiseSection from "./ExpertiseSection";
 import Footer from "./Footer";
+import AboutSection from "./AboutSection";
 import Hero from "./Hero";
+import ProjectsSection from "./ProjectsSection";
 import ScrollNav from "./ScrollNav";
 import Services from "./Services";
+import SuppliersSection from "./SuppliersSection";
 import "@/styles/nmbd/app.css";
 import "@/styles/nmbd/responsive.css";
 
@@ -32,7 +35,10 @@ export default function NmbdHomePage() {
       <ScrollNav />
       <Hero />
       <Services onServiceSelect={setSelectedService} />
+      <AboutSection />
       <ExpertiseSection />
+      <ProjectsSection />
+      <SuppliersSection />
       <ContactSection preselectedService={selectedService} />
       <Footer />
     </div>

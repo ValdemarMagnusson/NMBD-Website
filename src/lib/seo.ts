@@ -94,6 +94,7 @@ export function buildMetadata({
         { url: "/favicon.ico", sizes: "48x48" },
         { url: "/icons/favicon32.png", type: "image/png", sizes: "32x32" },
         { url: "/icons/favicon192.png", type: "image/png", sizes: "192x192" },
+        { url: "/icons/favicon512.png", type: "image/png", sizes: "512x512" },
       ],
       shortcut: "/favicon.ico",
       apple: "/icons/favicon192.png",

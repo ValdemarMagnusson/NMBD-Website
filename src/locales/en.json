@@ -120,6 +120,21 @@
         }
       }
     },
+    "about": {
+      "subtitle": "ABOUT US",
+      "title": "The people behind every project",
+      "intro": "A close-knit team of craftsmen and project managers with a passion for stone, groundwork and beautiful outdoor spaces. We handle the whole journey — from the first sketch to the final stone."
+    },
+    "projects": {
+      "subtitle": "OUR PROJECTS",
+      "title": "Work we're proud of",
+      "intro": "From decking and stone-setting to complete garden designs — a selection of projects and visions from the Stockholm area."
+    },
+    "suppliers": {
+      "subtitle": "IN PARTNERSHIP WITH",
+      "title": "Our suppliers",
+      "intro": "We work exclusively with the market's leading suppliers of natural stone, tile and building materials — for results built to last for generations."
+    },
     "contact": {
       "heading": "Contact us",
       "infoTitle": "Let's create your dream garden",
