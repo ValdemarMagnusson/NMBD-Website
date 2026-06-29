@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Providers } from "@/components/Providers";
 import { buildJsonLd, buildMetadata } from "@/lib/seo";
 import sv from "@/locales/sv.json";
@@ -47,6 +48,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleAnalytics />
         <Providers>{children}</Providers>
       </body>
     </html>

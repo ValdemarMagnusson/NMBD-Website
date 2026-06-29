@@ -39,6 +39,7 @@ export const site = {
     "Markarbeten",
   ],
   foundedYear: 2021,
+  googleAnalyticsId: "G-B9YT731NFS",
 } as const;
 
 export type Language = "sv" | "en";
